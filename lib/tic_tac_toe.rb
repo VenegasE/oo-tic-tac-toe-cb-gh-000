@@ -74,7 +74,7 @@ class TicTacToe
     if turns_played.even?
       "X"
     elsif turns_played.odd?
-      = "O"
+      "O"
     else
       nil
     end
