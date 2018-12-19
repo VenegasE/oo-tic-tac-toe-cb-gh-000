@@ -71,11 +71,11 @@ class TicTacToe
   def current_player
     turns_played = turn_count
     if turns_played.even?
-      "X"
+      @player = "X"
     elsif turns_played.odd?
-      "O"
+      @player = "O"
     else
-      nil
+      @player = nil
     end
   end
 
