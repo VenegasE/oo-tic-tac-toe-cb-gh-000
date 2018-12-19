@@ -121,4 +121,17 @@ class TicTacToe
     end
     nil
   end
+
+  def play
+    until over? || draw?
+      turn
+    end
+
+    if won?
+      winner_char = winner
+      puts "Congratulations #{winner_char}!"
+    elsif draw?
+      puts "Cat's Game!"
+    end
+  end
 end
