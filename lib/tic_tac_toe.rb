@@ -52,7 +52,8 @@ class TicTacToe
     input = gets.strip
     index = input_to_index(input)
     if valid_move?(index)
-      move(index,@player)
+      player = current_player
+      move(index,player)
     else
       turn
     end
@@ -71,11 +72,11 @@ class TicTacToe
   def current_player
     turns_played = turn_count
     if turns_played.even?
-      @player = "X"
+      "X"
     elsif turns_played.odd?
-      @player = "O"
+      = "O"
     else
-      @player = nil
+      nil
     end
   end
 
